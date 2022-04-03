@@ -66,6 +66,9 @@ export default function Create() {
             <button className="btn" onClick={handleAdd}>add</button>
           </div>
         </label>
+        <p>Current ingredients: {ingredients.map(ing => (
+          <em key={ing}>{ing}, </em>
+        ))}</p>
 
         <label>
           <span>Method: </span>
