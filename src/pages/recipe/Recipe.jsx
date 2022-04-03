@@ -1,5 +1,5 @@
 import { useFetch } from '../../hooks/useFetch'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 //styles
 import './recipe.css'
@@ -10,18 +10,18 @@ export default function Recipe() {
   const { data:recipe, isPending, error} = useFetch(url)
 
   return (
-    <div>
+    <div className="recipe">
       {error && <p className='error'>{error}</p>}
       {isPending && <p className='loading'>Loading...</p>}
       {recipe && 
-        <div className="recipe">
-          <h1>{recipe.title}</h1>
+        <>
+          <h2 className='page-title'>{recipe.title}</h2>
           <p>Cooking Time: {recipe.cookingTime}</p>
-          {recipe.ingredients.map(ingredient => (
-            <p>- {ingredient}</p>
-          ))}
-          <div>{recipe.method}</div>
-        </div>
+          <ul>
+            {recipe.ingredients.map(ingredient => <li key={ingredient}>{ingredient}</li>)}
+          </ul> 
+          <div className='method'>{recipe.method}</div>
+        </>
       }
     </div>
   )
