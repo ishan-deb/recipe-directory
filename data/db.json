@@ -36,6 +36,16 @@
       ],
       "method": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minima ex rem quis similique eum ratione quaerat, voluptas molestias ut repudiandae delectus voluptates. Eius esse at tenetur ab accusamus excepturi?",
       "cookingTime": "35 minutes"
+    },
+    {
+      "title": "koo",
+      "ingredients": [
+        "roo",
+        "oro"
+      ],
+      "method": "skoo, choo choo kachoo",
+      "cookingTime": "23 minutes",
+      "id": "Fo_yCkw"
     }
   ]
 }
