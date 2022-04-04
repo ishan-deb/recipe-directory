@@ -46,6 +46,26 @@
       "method": "skoo, choo choo kachoo",
       "cookingTime": "23 minutes",
       "id": "Fo_yCkw"
+    },
+    {
+      "title": "sploo",
+      "ingredients": [
+        "oloo",
+        "uloo"
+      ],
+      "method": "joo joo",
+      "cookingTime": "25 minutes",
+      "id": "k8o9Now"
+    },
+    {
+      "title": "butter chicken",
+      "ingredients": [
+        "butter",
+        "chicken"
+      ],
+      "method": "cook it",
+      "cookingTime": "10 minutes",
+      "id": "Sh7hs2i"
     }
   ]
 }
