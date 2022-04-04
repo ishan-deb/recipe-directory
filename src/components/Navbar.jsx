@@ -1,6 +1,10 @@
-import './navbar.css'
 import { Link } from 'react-router-dom'
 
+//components
+import SearchBar from './SearchBar'
+
+//styles
+import './navbar.css'
 export default function Navbar() {
   return (
     <div className='navbar'>
@@ -8,6 +12,7 @@ export default function Navbar() {
         <Link to='/'>
           <h1>Cook</h1>
         </Link>
+        <SearchBar />
         <Link to='/create'>
           Create Recipe
         </Link>
